@@ -1,0 +1,20 @@
+.container {
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  display: flex;
+}
+
+.desc {
+  color: #444;
+  font-size: 24px;
+  width: 70%;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}

@@ -1,8 +1,9 @@
-import styles from "../styles/Pizza.module.css";
+import PizzaCard from "./PizzaCard";
+import styles from "../styles/PizzaList.module.css";
 
 const PizzaList = () => {
   return (
-    <div style={styles.container}>
+    <div className={styles.container}>
       <h1 className={styles.title}>BEST PIZZA IN TOWN</h1>
       <p className={styles.desc}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
@@ -11,7 +12,16 @@ const PizzaList = () => {
         eligendi. Sit!
       </p>
 
-      <div className={styles.wrapper}></div>
+      <div className={styles.wrapper}>
+        <PizzaCard />
+        <PizzaCard />
+        <PizzaCard />
+        <PizzaCard />
+        <PizzaCard />
+        <PizzaCard />
+        <PizzaCard />
+        <PizzaCard />
+      </div>
     </div>
   );
 };
