@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.left {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+}
+
+.imgContainer {
+  height: 80%;
+  width: 80%;
+  position: relative;
+}
+
+.price {
+  color: #d1411e;
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid #d1411e;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.size {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+.size:nth-child(2) {
+  height: 40px;
+  width: 40px;
+}
+
+.size:last-child {
+  height: 50px;
+  width: 50px;
+}
+
+.number {
+  background-color: teal;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+  padding: 0 5px;
+  position: absolute;
+  right: -20px;
+  top: -5px;
+}
+
+.ingredients {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
