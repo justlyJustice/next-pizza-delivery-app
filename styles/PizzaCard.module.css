@@ -22,4 +22,20 @@
 
 .desc {
   color: #777;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .price,
+  .desc {
+    font-size: 24px;
+  }
 }

@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  padding: 50px;
+}
+
+.left {
+  flex: 2;
+}
+
+.table {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.row:last-child {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.done {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.inProgress {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.undone {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.3;
+}
+
+.undone .checkedIcon,
+.inProgress .checkedIcon {
+  display: none;
+}
+
+.right {
+  flex: 1;
+}
+
+.wrapper {
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  justify-content: space-between;
+  padding: 50px;
+  padding-top: 10px;
+  width: 90%;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.button {
+  background-color: white;
+  color: teal;
+  cursor: not-allowed;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+  }
+
+  .id::before {
+    content: "Order ID: ";
+    font-weight: 500;
+  }
+
+  .name::before {
+    content: "Customer: ";
+    font-weight: 500;
+  }
+
+  .address::before {
+    content: "Address: ";
+    font-weight: 500;
+  }
+
+  .total::before {
+    content: "Total: ";
+    font-weight: 500;
+  }
+
+  .row:last-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .done,
+  .undone,
+  .inProgress {
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+}
